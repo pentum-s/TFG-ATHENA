@@ -6,7 +6,6 @@ Grado en Ciencia de Datos Aplicada — Universitat Oberta de Catalunya (UOC)
 
 Autor   : Álvaro Sánchez Mendoza
 Tutor   : Carlos Gaitán Poyatos
-Versión : 1.0.0
 
 Descripción
 -----------

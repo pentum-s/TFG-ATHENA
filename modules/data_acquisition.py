@@ -6,7 +6,6 @@ Grado en Ciencia de Datos Aplicada — Universitat Oberta de Catalunya (UOC)
 
 Autor   : Álvaro Sánchez Mendoza
 Tutor   : Carlos Gaitán Poyatos
-Versión : 1.0.0
 
 Descripción
 -----------
@@ -744,8 +743,8 @@ class DataAcquisition:
 
         La curtosis reportada es la curtosis en exceso (scipy/pandas
         convention): una distribución normal tiene curtosis = 0.
-        Valores positivos indican colas más pesadas que la normal
-        (leptocúrtica), común en series financieras.
+        Valores positivos indican colas más pesadas que la normal, 
+        común en series financieras.
 
         Ejemplos
         --------
@@ -881,7 +880,6 @@ class DataAcquisition:
         El Máximo Drawdown (MDD) mide la mayor pérdida porcentual
         acumulada desde un máximo histórico hasta el mínimo
         subsiguiente antes de que se alcance un nuevo máximo.
-        Es una medida estándar de riesgo en gestión de carteras.
 
         Parametros
         ----------

@@ -1,0 +1,102 @@
+# =============================================================================
+# PROYECTO ATHENA — .gitignore
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Entorno virtual de Python
+# El usuario crea el suyo propio tras el git clone con:
+#   python -m venv .venv && pip install -r requirements.txt
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------------------
+# Caché de datos financieros
+# Los CSV se regeneran automáticamente al ejecutar la app.
+# No se suben para evitar datos desactualizados en el repositorio
+# y porque pueden contener precios de activos sujetos a restricciones
+# de redistribución de Yahoo Finance.
+# ---------------------------------------------------------------------------
+data/cache/
+data/cache/*.csv
+
+# ---------------------------------------------------------------------------
+# Caché de Python y pytest
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# ---------------------------------------------------------------------------
+# Jupyter Notebooks — checkpoints automáticos
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Archivos del sistema operativo
+# ---------------------------------------------------------------------------
+
+# Windows
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ---------------------------------------------------------------------------
+# Editores e IDEs
+# ---------------------------------------------------------------------------
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# ---------------------------------------------------------------------------
+# Variables de entorno y configuración local sensible
+# Si en el futuro se añaden claves de API, tokens u otras credenciales,
+# deben ir en un archivo .env que nunca se sube al repositorio.
+# ---------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+secrets.py
+
+# ---------------------------------------------------------------------------
+# Artefactos de construcción y distribución
+# ---------------------------------------------------------------------------
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+
+# ---------------------------------------------------------------------------
+# Archivos de log
+# ---------------------------------------------------------------------------
+*.log
+logs/
+
+# ---------------------------------------------------------------------------
+# Cobertura de tests
+# ---------------------------------------------------------------------------
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# ---------------------------------------------------------------------------
+# Archivos temporales generados durante el análisis
+# Las imágenes y gráficos exportados desde los notebooks no forman
+# parte del código fuente y se pueden regenerar ejecutando los notebooks.
+# ---------------------------------------------------------------------------
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Excepción: mantener imágenes que formen parte de la documentación
+# si en el futuro se añaden a una carpeta docs/
+!docs/**/*.png
